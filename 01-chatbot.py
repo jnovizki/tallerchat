@@ -14,7 +14,7 @@ def generar_respuesta(pregunta):
 
 
 def main():
-    print("Bienvenido al Chatbot de OpenAI")
+    print("Bienvenido al Chatbot de OpenAI!")
 
     while True: 
         pregunta = input("Escribe tu pregunta (o 'salir' para finalizar): ")
