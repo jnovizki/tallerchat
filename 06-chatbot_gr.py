@@ -14,15 +14,15 @@ def generar_respuesta(pregunta,historia):
     )
     print (pregunta,historia)
     return respuesta.choices[0].text.strip()
-
+    
 
 iface = gr.ChatInterface(
     generar_respuesta,
-    chatbot=gr.Chatbot(height=300),
-    textbox=gr.Textbox(placeholder="Hazme una pregunta", container=False, scale=7),  
+    chatbot=gr.Chatbot(height=300,container=True),
+    textbox=gr.Textbox(placeholder="Hazme una pregunta", container=False, scale=7), 
     title="Chatbot de OpenAI",
-    description="Escribe una pregunta y obtén una respuesta generada por ChatGPT."
-    
+    description="Escriba una pregunta y obtén una respuesta generada por ChatGPT.", 
+    submit_btn = gr.Button("Enviar")
 )
 
 if __name__ == "__main__":

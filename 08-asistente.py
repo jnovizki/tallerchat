@@ -10,6 +10,7 @@ import re, string
 import os #
 
 
+
 #configura token de openai
 #openai.api_key = cf.key
 

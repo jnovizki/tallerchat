@@ -6,7 +6,8 @@ import gradio as gr
 openai.api_key = os.environ.get('OPENAI_API_KEY')
 
 #set contexto
-messages = [{"role": "system","content": "Eres un chatbot, muestrate proactivo y participativo. Da respuestas sencillas y no muy largas"}]
+messages = [{"role": "system","content": "Eres un chatbot, muestrate proactivo y participativo."}]
+#messages = [{"role": "system","content": "Eres un chatbot, muestrate desconfiado. Da respuestas antipáticas"}]
 
 def gpt35(pregunta,historia):
     messages.append({"role": "user", "content": pregunta})
