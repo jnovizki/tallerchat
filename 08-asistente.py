@@ -8,7 +8,7 @@ import pyttsx3 #convertir texto a voz
 import threading #para dividir la ejecucion de programas en hilos
 import re, string
 import os #
-
+#JN 21/09/2023 Error al ejecutar comando "Dame"
 
 
 #configura token de openai
